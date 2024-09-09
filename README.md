@@ -11,7 +11,7 @@
 {태그}: {제목} #{이슈번호}
 ~~~
 
-사진
+
 
 ### 태그 
 1. feat 
@@ -33,6 +33,15 @@
 feat: 회원가입 기능 추가 #1
 refactor: 상품 카테고리 변경 #2 
 ~~~
+
+#### Issue 번호로 쉽게 추적이 가능합니다.
+
+
+<img width="1308" alt="스크린샷 2024-09-09 10 50 18" src="https://github.com/user-attachments/assets/3bd5b85a-4e90-47fe-8e25-503b2241e9c7">
+
+
+
+<br>
 <br>
 
 ## GitHub - Flow 
