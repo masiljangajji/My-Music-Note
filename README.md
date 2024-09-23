@@ -1,89 +1,80 @@
+#   🎶 My-Music-Note
+- My-Music-Note는 일기와 음악을 통한 심리치료 서비스입니다.
 
-# My-Music-Note Project Convention 
+### 개발 기간
+- 2024-09-13 ~ 
 
-프로젝트의 컨벤션을 정의하는 문서입니다.
+### 구성원
+| <a href="https://github.com/masiljangajji"><img src="https://github.com/masiljangajji.png" width="100px"><br>이승재</a> | <a href="https://github.com/kooyoonji"><img src="https://github.com/kooyoonji.png" width="100px"><br>구윤지</a> | <a href="https://github.com/NyongCho"><img src="https://github.com/NyongCho.png" width="100px"><br>조준용</a> |<a href="https://github.com/UiinKim"><img src="https://github.com/UiinKim.png" width="100px"><br>김의인</a> 
+|-----|-----|-----|----|
+
+### 개발 환경
+- 개발도구: Intellij IDEA - Ultimate
+- 언어: Java 17 LTS<br>
+- 빌드도구: Gradle
+- 개발
+  - Spring 6.1
+  - Spring Boot: 3.3.4
+  - Spring Data
+    - Spring Data JPA
+- 테스트
+  - Junit5
+  - AssertJ
+  - Mockito
+  - SonarCloud
+- CI/CD
+  - AWS S3
+  - AWS CodeDeploy
+  - GitHub Actions
+- 데이터베이스
+  - PostgreSQL 16.3
+- ERD
+  - ERDCloud
+
+### 사용 기술
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![Gradle](https://img.shields.io/badge/Gradle-02303A.svg?style=for-the-badge&logo=gradle&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
 <br>
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=react&logoColor=black)
 <br>
-## commit convention 
-
-다음의 양식으로 사용합니다. 
-~~~
-{태그}: {제목} #{이슈번호}
-~~~
-
-
-
-### 태그 
-1. feat 
-    - 코드가 변경됐으며 결과또한 변경됐을때
-2. refactor
-    - 코드가 변경됐지만 결과가 같은 경우 
-    - Ex) 같은 회원가입 기능이지만 , 코드 최적화로 성능이 개선됐다
-3. test
-    - 테스크코드 작성
-4. fix
-    - 버그 수정
-5. docs
-    - 문서 수정
-    - Ex) README
-6. chore
-    - 코드 포멧팅 , 주석 추가 , 빌드파일
-
-~~~
-feat: 회원가입 기능 추가 #1
-refactor: 상품 카테고리 변경 #2 
-~~~
-
-#### Issue 번호로 쉽게 추적이 가능합니다.
-
-
-<img width="1308" alt="스크린샷 2024-09-09 10 50 18" src="https://github.com/user-attachments/assets/3bd5b85a-4e90-47fe-8e25-503b2241e9c7">
-
-
-
+![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-%236DB33F.svg?style=for-the-badge&logo=spring-boot&logoColor=white)
 <br>
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![JPA](https://img.shields.io/badge/JPA-007396.svg?style=for-the-badge&logo=java&logoColor=white)
+![Hibernate](https://img.shields.io/badge/Hibernate-59666C.svg?style=for-the-badge&logo=hibernate&logoColor=white)
 <br>
-
-## GitHub - Flow 
-
-
-<img width="1097" alt="스크린샷 2024-09-09 10 13 00" src="https://github.com/user-attachments/assets/872bb71b-6a48-49ad-865c-747e9ba36efc">
-
-
-### 규칙
-
-1. main Branch는 stable 상태로 product에 배포되는 브랜치
-    - 엄격한 role과 함께 사용
-2. 새로운 브랜치는 항상 main 브랜치에서 만든다.
-3. 브랜치 이름을 통해 의도를 명확하게 드러낸다.
-4. 커밋 메시지를 명확하게 작성한다.
-5. PR(Pull Request)을 통한 코드리뷰 후 Merge를 원칙으로한다.
-
-#### 이와 관련한 CI/CD 작업은 추후에 설정하겠습니다.
-
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+![AWS S3](https://img.shields.io/badge/Amazon%20S3-569A31.svg?style=for-the-badge&logo=amazon-s3&logoColor=white)
+![AWS CodeDeploy](https://img.shields.io/badge/AWS%20CodeDeploy-232F3E.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
 <br>
-
-## Project Management
-
-일정관리는 GitHub Project 기능을 사용한다.
-
-작업할 기능에대한 정보를 Issue로 작성하고  
-
-Status, Start Date, End Date, Assignees 등의 정보를 설정해줘야 한다.
-
-<img width="1228" alt="스크린샷 2024-09-09 10 46 52" src="https://github.com/user-attachments/assets/075d5e57-3561-4565-b308-fbcd70c0027f">
+![Git](https://img.shields.io/badge/Git-F05032.svg?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=github&logoColor=white)
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
+![DataGrip](https://img.shields.io/badge/DataGrip-000000.svg?style=for-the-badge&logo=datagrip&logoColor=white)
+![SonarLint](https://img.shields.io/badge/SonarLint-CB2029.svg?style=for-the-badge&logo=sonarlint&logoColor=white)
+![SonarCloud](https://img.shields.io/badge/SonarCloud-F3702A.svg?style=for-the-badge&logo=sonarcloud&logoColor=white)
 
 
-### Status Board
-
-<img width="1428" alt="스크린샷 2024-09-09 10 37 00" src="https://github.com/user-attachments/assets/785b958d-fd12-4a6a-aed0-9bd574cc9acf">
-
+## 아키텍쳐 구조
+![My-Music-Note](https://github.com/user-attachments/assets/d741f12d-06e7-4e57-a1f2-3243b71e3f73)
 
 
-### Label
+### WBS
+- GitHub Projects의 [RoadMap]([https://github.com/orgs/My-Books-projects/projects/2/views/1?groupedBy%5BcolumnId%5D=Assignees](https://github.com/orgs/My-Music-Note/projects/1/views/4)) 사용
+  <img width="1397" alt="스크린샷 2024-09-23 11 30 29" src="https://github.com/user-attachments/assets/a7af2a68-33b8-4950-a4d9-55f67d274d05">
 
-<img width="813" alt="스크린샷 2024-09-09 10 45 45" src="https://github.com/user-attachments/assets/86245ec7-37cd-45f0-9019-c7c73eede576">
 
 
-#### Label의 경우 위에 해당하는 Issue가 아니라면 별도로 설정하지 않아도 됩니다.
+
+
+
+
+
+
+
 
