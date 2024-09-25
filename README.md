@@ -87,11 +87,7 @@
 3. CodeDeploy를 사용하는 목적은 Blue/Green 배포 + 배포 자동화의 목적 , Auto Scaling Group + Application Load Balancer를 사용하는 지금 가장 좋은 방법이라 판단
 4. Docker를 사용함으로서 동일한 환경을 제공 가능함 , 스크립트의 내용 또한 매우 간단해짐 
 
-
-
-
-
-
+![CI:CD](https://github.com/user-attachments/assets/91286416-6be2-4f75-b17b-f6161945449b)
 
 
 
