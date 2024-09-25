@@ -66,20 +66,25 @@
 ![My-Music-Note](https://github.com/user-attachments/assets/d741f12d-06e7-4e57-a1f2-3243b71e3f73)
 
 
-### WBS
+## WBS
 - GitHub Projects의 [RoadMap]([https://github.com/orgs/My-Books-projects/projects/2/views/1?groupedBy%5BcolumnId%5D=Assignees](https://github.com/orgs/My-Music-Note/projects/1/views/4)) 사용
   <img width="1397" alt="스크린샷 2024-09-23 11 30 29" src="https://github.com/user-attachments/assets/a7af2a68-33b8-4950-a4d9-55f67d274d05">
 
-## Refactoring 요소
+## 배포
 
-배포 파이프라인이 GitHub Actions + S3 + CodeDeploy 인 상태  
-S3 + CodeDeploy를 조합해서 사용하고자 했던 이유는 zip파일로 기록이 남으니 버전관리가 가능할 것 이라는 생각 또한 Docker라는 AWS내의 서비스가 아닌 외부 서비스에 의존하고 싶지 않아서  
-하지만 다음의 문제가 존재함을 인지
+#### v1: GitHub Actions + S3 + CodeDeploy 
+- S3 + CodeDeploy를 조합해서 사용하고자 했던 이유는 zip파일로 기록이 남으니 버전관리가 가능할 것 이라는 생각, 또한 Docker라는 AWS내의 서비스가 아닌 외부 서비스에 의존하고 싶지 않아서  
+- 하지만 다음의 문제가 존재함을 인지
+1. 일관된 환경을 제공해 줄 수 있는지
+2. 의존성을 줄이고자 함은 생산성을 높이는 방법이기 때문인데 과연 S3 , CodeDploy를 사용하는 방식이 생산성이 더 높은지 , Docker를 사용하지 않고 스크립트에서 배포하고 재시작하고... 이런것이 너무 복잡하게 느껴짐 오히려 생산성이 줄지않을까?
 
-1. zip파일로 기록이 남으니 버전관리가 가능한 것은 맞지만 일관된 환경을 제공해 줄 수 있는지
-2. 의존성을 줄이고자 함은 생산성을 높이는 방법이기 때문인데 과연 S3 , CodeDploy를 사용하는 방식이 생산성이 더 높은지 , S3,CodeDeploy를 쓰는 조합이 Docker로 이미지 올리고 Pull 땡기는것보다 더욱 복잡하다는 생각이 듬
+다음의 이유로 Docker기반으로 배포 라인을 구축할 것
 
-다음의 이유로 Docker기반으로 배포 라인을 구축할 것 , 또한 Private Subnet의 경우 NAT Gateway를 설정하도록 하겠음
+#### v2: Github Actions + S3 + CodeDeploy + Docker
+
+1. S3는 CodeDeploy가 실행시킬 스크립트를 저장하는 용도로만 사용 , 변경이 없을 것으로 생각 매번 CD단계에서 매번 zip파일 만들어 올리지 않고 한번 올린 후 있는것 재사용
+2. CodeDeploy를 사용하는 목적은 Blue/Green 배포 + 배포 자동화의 목적 , Auto Scaling Group + Application Load Balancer를 사용하는 지금 가장 좋은 방법이라 판단
+3. Docker를 사용함으로서 동일한 환경을 제공 가능함 , 스크립트의 내용 또한 매우 간단해짐 
 
 
 
