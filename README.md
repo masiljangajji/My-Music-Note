@@ -74,7 +74,7 @@
 
 #### v1: GitHub Actions + S3 + CodeDeploy 
 - S3 + CodeDeploy를 조합해서 사용하고자 했던 이유는 zip파일로 기록이 남으니 버전관리가 가능할 것 이라는 생각, 또한 Docker라는 AWS내의 서비스가 아닌 외부 서비스에 의존하고 싶지 않아서  
-- 하지만 다음의 문제가 존재함을 인지
+#### 하지만 다음의 문제가 존재함을 인지
 1. 일관된 환경을 제공해 줄 수 있는지
 2. 의존성을 줄이고자 함은 생산성을 높이는 방법이기 때문인데 과연 S3 , CodeDploy를 사용하는 방식이 생산성이 더 높은지 , Docker를 사용하지 않고 스크립트에서 배포하고 재시작하고... 이런것이 너무 복잡하게 느껴짐 오히려 생산성이 줄지않을까?
 
@@ -82,9 +82,10 @@
 
 #### v2: Github Actions + S3 + CodeDeploy + Docker
 
-1. S3는 CodeDeploy가 실행시킬 스크립트를 저장하는 용도로만 사용 , 변경이 없을 것으로 생각 매번 CD단계에서 매번 zip파일 만들어 올리지 않고 한번 올린 후 있는것 재사용
-2. CodeDeploy를 사용하는 목적은 Blue/Green 배포 + 배포 자동화의 목적 , Auto Scaling Group + Application Load Balancer를 사용하는 지금 가장 좋은 방법이라 판단
-3. Docker를 사용함으로서 동일한 환경을 제공 가능함 , 스크립트의 내용 또한 매우 간단해짐 
+1. S3는 CodeDeploy가 실행시킬 스크립트를 저장하는 용도로만 사용 
+2. 스크립트의 내용이 Docker를 실행이 전부이기 떄문에 변경이 없을 것으로 판단, CD단계에서 매번 zip파일 만들어 올리지 않고 한번 올린 후 있는것 재사용
+3. CodeDeploy를 사용하는 목적은 Blue/Green 배포 + 배포 자동화의 목적 , Auto Scaling Group + Application Load Balancer를 사용하는 지금 가장 좋은 방법이라 판단
+4. Docker를 사용함으로서 동일한 환경을 제공 가능함 , 스크립트의 내용 또한 매우 간단해짐 
 
 
 
