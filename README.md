@@ -62,16 +62,16 @@
 ![SonarCloud](https://img.shields.io/badge/SonarCloud-F3702A.svg?style=for-the-badge&logo=sonarcloud&logoColor=white)
 
 
-## 아키텍쳐 구조
-![My-Music-Note](https://github.com/user-attachments/assets/d741f12d-06e7-4e57-a1f2-3243b71e3f73)
+## AWS Infra
+![My-Music-Note](https://github.com/user-attachments/assets/679d3c38-82db-479c-80be-a41b12d25b21)
 
-## 배포
+## Deploy
 
 ### Github Actions + S3 + CodeDeploy + Docker
 
 0. 인프라 관리비용 최소화를 위해 Jenkins 대신 Github Ations 사용
 1. S3는 CodeDeploy가 실행시킬 스크립트를 저장하는 용도로만 사용 
-2. CodeDeploy를 사용하는 목적은 Blue/Green 배포 + 배포 자동화의 목적 
+2. CodeDeploy를 사용하는 목적은 Blue/Green 배포 + ASG로 생성된 EC2배포 자동화의 목적 
 3. Docker를 사용함으로서 동일한 환경을 제공
 
 ![CI:CD](https://github.com/user-attachments/assets/91286416-6be2-4f75-b17b-f6161945449b)
