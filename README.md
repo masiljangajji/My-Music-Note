@@ -21,12 +21,12 @@
   - AssertJ
   - Mockito
   - SonarCloud
-- Cloud
-  - AWS VPC
-  - AWS EC2
-  - AWS ALB
-  - AWS ASG
-  - AWS NAT Gateway
+- AWS Infra
+  - VPC
+  - EC2
+  - ALB
+  - ASG
+  - NAT Gateway
 - CI/CD
   - AWS S3
   - AWS CodeDeploy
@@ -34,6 +34,7 @@
   - Docker
 - 데이터베이스
   - AWS RDS PostgreSQL 16.3
+  - AWS S3
 - ERD
   - ERDCloud
 
