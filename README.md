@@ -1,9 +1,6 @@
 #   🎶 My-Music-Note
 - My-Music-Note는 일기와 음악을 통한 심리치료 서비스입니다.
 
-### 개발 기간
-- 2024-09-13 ~ 
-
 ### 구성원
 | <a href="https://github.com/masiljangajji"><img src="https://github.com/masiljangajji.png" width="100px"><br>BE 이승재</a> | <a href="https://github.com/kooyoonji"><img src="https://github.com/kooyoonji.png" width="100px"><br>FE 구윤지</a> | <a href="https://github.com/NyongCho"><img src="https://github.com/NyongCho.png" width="100px"><br>AI 조준용</a> |<a href="https://github.com/UiinKim"><img src="https://github.com/UiinKim.png" width="100px"><br>AI 김의인</a> 
 |-----|-----|-----|----|
