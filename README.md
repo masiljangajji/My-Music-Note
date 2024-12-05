@@ -23,11 +23,16 @@
   - Mockito
   - SonarCloud
 - Cloud
-  - AWS 
+  - AWS VPC
+  - AWS EC2
+  - AWS ALB
+  - AWS ASG
+  - AWS NAT Gateway
 - CI/CD
   - AWS S3
   - AWS CodeDeploy
   - GitHub Actions
+  - Docker
 - 데이터베이스
   - PostgreSQL 16.3
 - ERD
