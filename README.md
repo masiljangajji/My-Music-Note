@@ -13,7 +13,6 @@
 - 언어: Java 17 LTS<br>
 - 빌드도구: Gradle
 - 개발
-  - Spring 6.1
   - Spring Boot: 3.3.4
   - Spring Data
     - Spring Data JPA
