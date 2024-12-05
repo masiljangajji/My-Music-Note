@@ -33,7 +33,7 @@
   - GitHub Actions
   - Docker
 - 데이터베이스
-  - PostgreSQL 16.3
+  - AWS RDS PostgreSQL 16.3
 - ERD
   - ERDCloud
 
