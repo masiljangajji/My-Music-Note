@@ -66,13 +66,8 @@
 ![CI:CD](https://github.com/user-attachments/assets/f96eb2c9-a07a-42cd-b910-4bd0344e22f2)
 
 0. 인프라 관리비용 최소화를 위해 Jenkins 대신 Github Ations 사용
-1. S3는 CodeDeploy가 실행시킬 스크립트를 저장하는 용도로만 사용 
+1. S3는 CodeDeploy가 실행시킬 Artifact를 저장
 2. CodeDeploy를 사용하는 목적은 Blue/Green 배포 + ASG로 생성된 EC2배포 자동화의 목적 
 3. Docker를 사용함으로서 동일한 환경을 제공
-
-
-## WBS
-- GitHub Projects의 [RoadMap]([https://github.com/orgs/My-Books-projects/projects/2/views/1?groupedBy%5BcolumnId%5D=Assignees](https://github.com/orgs/My-Music-Note/projects/1/views/4)) 사용
-  <img width="1397" alt="스크린샷 2024-09-23 11 30 29" src="https://github.com/user-attachments/assets/a7af2a68-33b8-4950-a4d9-55f67d274d05">
 
 
