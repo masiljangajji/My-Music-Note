@@ -38,11 +38,8 @@
 ![Gradle](https://img.shields.io/badge/Gradle-02303A.svg?style=for-the-badge&logo=gradle&logoColor=white)
 ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
 <br>
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=react&logoColor=black)
-<br>
-![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-%236DB33F.svg?style=for-the-badge&logo=spring-boot&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=react&logoColor=black)
 <br>
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 ![JPA](https://img.shields.io/badge/JPA-007396.svg?style=for-the-badge&logo=java&logoColor=white)
@@ -52,29 +49,26 @@
 ![AWS S3](https://img.shields.io/badge/Amazon%20S3-569A31.svg?style=for-the-badge&logo=amazon-s3&logoColor=white)
 ![AWS CodeDeploy](https://img.shields.io/badge/AWS%20CodeDeploy-232F3E.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![AWS](https://img.shields.io/badge/Amazon%20AWS-232F3E.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white)
 <br>
 ![Git](https://img.shields.io/badge/Git-F05032.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=github&logoColor=white)
 ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
 ![DataGrip](https://img.shields.io/badge/DataGrip-000000.svg?style=for-the-badge&logo=datagrip&logoColor=white)
-![SonarLint](https://img.shields.io/badge/SonarLint-CB2029.svg?style=for-the-badge&logo=sonarlint&logoColor=white)
 ![SonarCloud](https://img.shields.io/badge/SonarCloud-F3702A.svg?style=for-the-badge&logo=sonarcloud&logoColor=white)
 
 
 ## AWS Infra
 ![My-Music-Note](https://github.com/user-attachments/assets/679d3c38-82db-479c-80be-a41b12d25b21)
 
-## Deploy
+## CI/CD
 
-### Github Actions + S3 + CodeDeploy + Docker
+![CI:CD](https://github.com/user-attachments/assets/f96eb2c9-a07a-42cd-b910-4bd0344e22f2)
 
 0. 인프라 관리비용 최소화를 위해 Jenkins 대신 Github Ations 사용
 1. S3는 CodeDeploy가 실행시킬 스크립트를 저장하는 용도로만 사용 
 2. CodeDeploy를 사용하는 목적은 Blue/Green 배포 + ASG로 생성된 EC2배포 자동화의 목적 
 3. Docker를 사용함으로서 동일한 환경을 제공
-
-![CI:CD](https://github.com/user-attachments/assets/91286416-6be2-4f75-b17b-f6161945449b)
 
 
 ## WBS
