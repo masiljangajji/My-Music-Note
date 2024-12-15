@@ -1,6 +1,6 @@
 #   🎶 My-Music-Note
 My-Music-Note는 일기와 음악을 통한 나만의 AI친구 사비스입니다.
-- URL: www.musicdiaryclub.com
+- URL(만료): www.musicdiaryclub.com
 - [api-server-repo](https://github.com/My-Music-Note/back)
 
 
@@ -113,5 +113,6 @@ My-Music-Note는 일기와 음악을 통한 나만의 AI친구 사비스입니�
 
 ## SonarCloud 
 
-![SonarCloud](https://github.com/user-attachments/assets/29da23e1-4df1-4aca-ac74-343222f01110)
+
+![SonarCloud](https://github.com/user-attachments/assets/9ecc4c19-5c24-4a93-b7ad-4d0aa661cdc7)
 
