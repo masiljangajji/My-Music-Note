@@ -61,7 +61,7 @@
 
 
 ## AWS Infra
-![My-Music-Note](https://github.com/user-attachments/assets/679d3c38-82db-479c-80be-a41b12d25b21)
+![My-Music-Note](https://github.com/user-attachments/assets/43646079-df7c-4e65-bcda-7d385655c083)
 
 ## CI/CD
 
