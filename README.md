@@ -61,14 +61,15 @@
 
 
 ## AWS Infra
-![My-Music-Note](https://github.com/user-attachments/assets/43646079-df7c-4e65-bcda-7d385655c083)
+![My-Music-Note](https://github.com/user-attachments/assets/384049f4-670b-464b-b53f-b2b6579e8622)
+
 
 ## CI/CD
 
 ![CI:CD](https://github.com/user-attachments/assets/f96eb2c9-a07a-42cd-b910-4bd0344e22f2)
 
 0. 인프라 관리비용 최소화를 위해 Jenkins 대신 Github Ations 사용
-1. S3는 CodeDeploy가 실행시킬 Artifact를 저장
+1. S3는 CodeDeploy가 실행시킬 Script를 저장
 2. CodeDeploy를 사용하는 목적은 Blue/Green 배포 + ASG로 생성된 EC2배포 자동화의 목적 
 3. Docker를 사용함으로서 동일한 환경을 제공
 
