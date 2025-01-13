@@ -100,4 +100,11 @@ My-Music-Note는 일기와 음악을 통한 나만의 AI친구 서비스입니�
 - **코드 품질 관리**
     - SonarCloud ,JaCoCo 연동으로 PR 단계에서 코드 품질 개선
     - 백엔드 서버 **Test Coverage 68.7%**
+    
+
+프로젝트 고민 및 트러블 슈팅
+
+- [**AWS 인프라 트러블슈팅 - 배포 전략과 컨테이너 전환**](https://masiljangajji-coding.tistory.com/88)
+- [**AWS Systems Manager와 SaaS로 구축한 저비용 고효율 인프라**](https://masiljangajji-coding.tistory.com/89)
+- [**Artillery를 활용한 테스트, 이렇게 도입했습니다**](https://masiljangajji-coding.tistory.com/90)
 
