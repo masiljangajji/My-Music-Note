@@ -63,6 +63,19 @@ My-Music-Note는 일기와 음악을 통한 나만의 AI친구 서비스입니�
 ## AWS Infra
 ![My-Music-Note](https://github.com/user-attachments/assets/384049f4-670b-464b-b53f-b2b6579e8622)
 
+## CI/CD
+
+![CI:CD](https://github.com/user-attachments/assets/f96eb2c9-a07a-42cd-b910-4bd0344e22f2)
+
+0. 인프라 관리비용 최소화를 위해 `Jenkins` 대신 `Github Ations` 사용
+1. `S3`는 `CodeDeploy`가 실행시킬 Script를 저장
+2. `CodeDeploy`를 사용하는 목적은 `Blue/Green` 배포 + `ASG`로 생성된 `EC2`배포 자동화의 목적 
+3. `Docker`를 사용함으로서 동일한 환경을 제공
+
+## 테스트 커버리지
+
+![SonarCloud](https://github.com/user-attachments/assets/9ecc4c19-5c24-4a93-b7ad-4d0aa661cdc7)
+
 ## 기여 내용
 
 - **백엔드 개발**
@@ -87,19 +100,4 @@ My-Music-Note는 일기와 음악을 통한 나만의 AI친구 서비스입니�
 - **코드 품질 관리**
     - SonarCloud ,JaCoCo 연동으로 PR 단계에서 코드 품질 개선
     - 백엔드 서버 **Test Coverage 68.7%**
-
-
-## CI/CD
-
-![CI:CD](https://github.com/user-attachments/assets/f96eb2c9-a07a-42cd-b910-4bd0344e22f2)
-
-0. 인프라 관리비용 최소화를 위해 `Jenkins` 대신 `Github Ations` 사용
-1. `S3`는 `CodeDeploy`가 실행시킬 Script를 저장
-2. `CodeDeploy`를 사용하는 목적은 `Blue/Green` 배포 + `ASG`로 생성된 `EC2`배포 자동화의 목적 
-3. `Docker`를 사용함으로서 동일한 환경을 제공
-
-## SonarCloud 
-
-
-![SonarCloud](https://github.com/user-attachments/assets/9ecc4c19-5c24-4a93-b7ad-4d0aa661cdc7)
 
