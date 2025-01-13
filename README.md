@@ -67,22 +67,33 @@ My-Music-Note는 일기와 음악을 통한 나만의 AI친구 서비스입니�
 
 - **백엔드 개발**
     - 유저, 일기, GPT 관련 RESTful API 구현
-- **인프라 및 배포**
+- **고가용성 아키텍처 설계**
     - Auto Scaling Group과 Load Balancer를 활용한 고가용성 아키텍처 구축
     - AWS CodeDeploy를 통한 Blue/Green 배포로 무중단 서비스 제공
+- **Artillery를 활용한 성능 테스트**
+    - 단일 EC2
+        - **타임아웃 오류: 전체 요청의 37.6%(14,766건)**
+        - **작업 실패율: 가상 사용자의 54.7%(14,766명)**
+    - My-Music-Note
+        - **타임아웃 오류: 0%**
+        - **작업 실패율: 0%**
+        - **99% 요청에 대해 레이턴시 25.8ms**
 - **GitHub Actions 기반 CI/CD 파이프라인 구축**
     - Gradle 및 Npm 캐싱 적용으로 CI/CD **빌드 시간 30% 이상 단축**
     - SonarCloud ,JaCoCo 연동으로 PR 단계에서 코드 품질 개선
+    - Amazon Machine Image 활용으로 배포 속도 개선 및 비용 절감
 - **보안 및 네트워크 강화**
-    - Session Manager 도입으로 SSH 없이 EC2 접근, Bastion Host 비용 제거 및 외부 노출 차단
+    - Systems Manager 도입으로 SSH 없이 EC2 접근, Bastion Host 비용 제거 및 외부 노출 차단
     - 보안 그룹 및 ALB-ASG 연동으로 Frontend와 Backend 계층 보안 강화
 - **코드 품질 관리**
     - 백엔드 서버 **Test Coverage 68.7%**
+    
 
 프로젝트 고민 및 트러블 슈팅
 
 - [**AWS 인프라 트러블슈팅 - 배포 전략과 컨테이너 전환**](https://masiljangajji-coding.tistory.com/88)
 - [**AWS Systems Manager와 SaaS로 구축한 저비용 고효율 인프라**](https://masiljangajji-coding.tistory.com/89)
+- [**Artillery를 활용한 테스트, 이렇게 도입했습니다**](https://masiljangajji-coding.tistory.com/90)
 
 
 ## CI/CD
